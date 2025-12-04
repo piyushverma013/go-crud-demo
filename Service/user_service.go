@@ -21,7 +21,7 @@ type InMemoryUserService struct {
 	nextID int
 }
 
-func NewUserService() *InMemoryUserService {
+func NewUserService() UserService {
 	return &InMemoryUserService{
 		users:  []User{},
 		nextID: 1,
